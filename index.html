@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>シンプルなウェブサイト</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="自分の紹介ページ">
+    <title>自己紹介</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>私の紹介ページ</h1>
+    </header>
 
-<header>
-  <h1>私のシンプルなウェブサイト</h1>
-</header>
+    <section class="profile-section">
+      <div class="profile-container">
+        <img src="profile.jpg" alt="プロフィール写真" class="profile-photo">
+        <div class="intro-text">
+          <h2>こんにちは、私は〇〇です</h2>
+          <p>
+            私は〇〇（あなたの名前やニックネーム）と申します。現在、△△（職業や学校）で働いています/勉強しています。
+            趣味は□□（趣味）で、最近では◇◇（最近ハマっていること）に挑戦しています。仕事や日々の生活で得た経験を
+            シェアすることが大好きで、これからも色々なことを学んでいきたいと思っています。
+          </p>
 
-<nav>
-  <a href="#home">ホーム</a>
-  <a href="#about">About</a>
-  <a href="#services">サービス</a>
-  <a href="#contact">お問い合わせ</a>
-</nav>
+          <h2>好きなこと・得意なこと</h2>
+          <ul>
+            <li>趣味：〇〇、□□、△△</li>
+            <li>特技：□□、△△</li>
+            <li>最近の挑戦：◇◇、☆☆</li>
+          </ul>
 
-<section id="home">
-  <h2>ホーム</h2>
-  <p>ようこそ！このサイトでは、シンプルで直感的なデザインを提供します。<br>このサイトは、ChatGPTを使用して作成されました。</p>
-  <p>このサイトにはウェブビーコンが入ってます。(この下)</p>
-</section>
+          <h2>連絡先</h2>
+          <div class="contact-info">
+            <div>
+              <h3>メール</h3>
+              <p><a href="mailto:example@example.com">example@example.com</a></p>
+            </div>
+            <div>
+              <h3>SNS</h3>
+              <p><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></p>
+            </div>
+            <div>
+              <h3>GitHub</h3>
+              <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-  <h2>About</h2>
-  <p>私たちのウェブサイトは、あなたに有用な情報を提供することを目指しています。</p>
-</section>
-
-<section id="services">
-  <h2>サービス</h2>
-  <ul>
-    <li>ウェブデザイン</li>
-    <li>SEO最適化</li>
-    <li>コンテンツ作成</li>
-  </ul>
-</section>
-
-<section id="contact">
-  <h2>お問い合わせ</h2>
-  <p>質問がある場合は、お気軽にご連絡ください。</p>
-</section>
-
-<footer>
-  <p>&copy; 2025 私のシンプルなウェブサイト</p>
-</footer>
-
-</body>
+    <footer>
+      <p>&copy; 2025 あなたの名前. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
