@@ -1,2 +1,3 @@
-# github.io
-math-u-tのGitHubページ
+# github.io #
+
+math-u-tのページです。オープンソース
