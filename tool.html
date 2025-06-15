@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>行ごとのスペース削除ツール</title>
+</head>
+<body>
+    <h1>各行の先頭スペースを指定数削除</h1>
+
+    <label for="inputText">入力テキスト（複数行）：</label><br>
+    <textarea id="inputText" rows="10" cols="60"></textarea><br><br>
+
+    <label for="spacesToRemove">各行から削除するスペースの数：</label><br>
+    <input type="number" id="spacesToRemove" min="0" value="0"><br><br>
+
+    <button onclick="removeSpacesFromLines()">スペースを削除</button>
+
+    <h2>結果：</h2>
+    <textarea id="outputText" rows="10" cols="60" readonly></textarea>
+
+    <script>
+        function removeSpacesFromLines() {
+            const inputText = document.getElementById("inputText").value;
+            const spacesToRemove = parseInt(document.getElementById("spacesToRemove").value, 10);
+
+            const lines = inputText.split('\n');
+
+            const modifiedLines = lines.map(line => {
+                const match = line.match(/^ */); // 先頭のスペースを取得
+                const spaceCount = match ? match[0].length : 0;
+                const toRemove = Math.min(spaceCount, spacesToRemove);
+                return line.slice(toRemove);
+            });
+
+            const result = modifiedLines.join('\n');
+            document.getElementById("outputText").value = result;
+        }
+    </script>
+</body>
+</html>
